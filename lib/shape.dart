@@ -24,7 +24,3 @@ void printArea(Shape shape) {
 }
 
 
-// void main() {
-//   final square = Square(10);
-//   print(square.area);
-// }

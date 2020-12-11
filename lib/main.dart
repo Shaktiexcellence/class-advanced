@@ -2,6 +2,7 @@ import 'dart:html';
 
 import 'package:learn_dart/point.dart';
 import 'package:learn_dart/shape.dart';
+import 'package:learn_dart/stack.dart';
 
 class Animal {
   final int age;
@@ -51,6 +52,14 @@ void main() {
   const list = [Point(1, 2), Point(2, 3)];
   print(list);
   print(Point(0, 0) == Point(0, 0));
-  print(Point(1, 1) + Point(2, 0)); 
-  print(Point(2, 1) * 5); 
+  print(Point(1, 1) + Point(2, 0));
+  print(Point(2, 1) * 5);
+  final stack = Stack<int>();
+  stack.push(1);
+  stack.push(2);
+  print(stack.pop());
+  print(stack.pop());
+  final names = Stack<String>();
+  names.push('Andrea');
+  names.push('Alice');
 }
